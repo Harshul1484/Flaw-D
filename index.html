@@ -140,29 +140,25 @@
                   <div class="home__swiper swiper">
                      <div class="swiper-wrapper">
 
-
-                        <article class="home__article swiper-slide">
+                        <article id="article1" class="home__article swiper-slide">
                            <div class="home__card">
-                             <div class="home__circle home__circle-1" style="position: relative;">
-                              <h1 class="flawd">Flaw-D</h1>
-                               <div class="home__subcircle"></div>
-                             </div>
-                             
-                             <img src="assets/img/TEE/ni.png" alt="" class="home__img-1">
+                              <div class="home__circle home__circle-1" style="position: relative;">
+                                 <h1 class="flawd">Flaw-D</h1>
+                                 <div class="home__subcircle"></div>
+                              </div>
+                              <img src="assets/img/TEE/NI.png" alt="" class="home__img-1">
                            </div>
-                         </article>
-                         
-
-                         <article class="home__article swiper-slide">
+                        </article>
+                        
+                        <article id="article2" class="home__article swiper-slide">
                            <div class="home__card">
-                             <div class="home__circle home__circle-2" style="position: relative;">
-                              <h1 class="flawd" >Flaw-D</h1>
-                               <div class="home__subcircle"></div>
-                             </div>
-                             
-                             <img src="assets/img/TEE/op.png" alt="" class="home__img-1">
+                              <div class="home__circle home__circle-2" style="position: relative;">
+                                 <h1 class="flawd" >Flaw-D</h1>
+                                 <div class="home__subcircle"></div>
+                              </div>
+                              <img src="assets/img/TEE/OP.png" alt="" class="home__img-1">
                            </div>
-                         </article>
+                        </article>
 
                          <!-- <article class="home__article swiper-slide">
                            <div class="home__card">
@@ -206,5 +202,30 @@
       <!--=============== MAIN JS ===============-->
       <script src="assets/js/main.js"></script>
       
+      <!-- One Button 2urls "View In AR" -->
+      <script>
+         document.addEventListener('DOMContentLoaded', function() {
+           var button = document.querySelector('.home__button2');
+         
+           var defaultUrl = 'url1';
+         
+           button.addEventListener('click', function() {
+      
+             var activeSlideIndex = document.querySelector('.swiper-slide-active').getAttribute('data-swiper-slide-index');
+             
+             var url;
+             if (activeSlideIndex === '0') {
+               url = 'https://intershipoh.github.io/AR-Main/itachi'; 
+             } else if (activeSlideIndex === '1') {
+               url = 'url2'; 
+             } else {
+               url = defaultUrl; 
+             }
+             
+             window.location.href = url;
+           });
+         });
+       </script>
+
    </body>
 </html>
