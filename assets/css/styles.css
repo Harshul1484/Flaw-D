@@ -592,7 +592,7 @@ img {
     font-weight: var(--font-bold);
     color: var(--title-color);
     position: fixed;
-    bottom: 8rem;
+    bottom: 2rem;
     left: 50%;
     transform: translateX(-50%);
     z-index: var(--z-fixed);
