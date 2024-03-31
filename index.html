@@ -23,16 +23,24 @@
       <header class="header" id="header">
          <nav class="nav container">
             <style>
-   
                .logo {
-                  
                    display: inline-block;
                    width: 200px;
                    height: 200px; 
                    background-size: cover;
-                   background-position: center;        
+                   background-position: center; 
+                   margin-top: 20px;
+               }
+           
+               @media screen and (max-width: 1150px) {
+                   .logo {
+                       display: block;
+                       margin: 0 auto;
+                       margin-top: 80px; /* Adjust the margin as needed */
+                   }
                }
            </style>
+           
            
            <a href="#" class="logo" style="background-image: url('assets/img/logo.png');"></a>
            
@@ -120,6 +128,12 @@
                   <a href="#" class="home__button">
                      Buy Now <i class="ri-arrow-right-line"></i>
                   </a>
+
+                     <br><br>
+
+                  <a href="#" class="home__button2">
+                     View in AR <i class="ri-arrow-right-line"></i>
+                  </a>
                </div>
 
                <div class="home__images">
@@ -150,7 +164,7 @@
                            </div>
                          </article>
 
-                         <article class="home__article swiper-slide">
+                         <!-- <article class="home__article swiper-slide">
                            <div class="home__card">
                              <div class="home__circle home__circle-3" style="position: relative;">
                               <h1 class="flawd">Flaw-D</h1>
@@ -159,7 +173,7 @@
                              
                              <img src="assets/img/TEE/DN.png" alt="" class="home__img-1">
                            </div>
-                         </article>
+                         </article> -->
 
                      </div>
                   </div>
